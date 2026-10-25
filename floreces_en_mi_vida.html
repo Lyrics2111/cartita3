@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floreces en mi vida 🌸</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;overflow-x:hidden;
+ color:#8f3f62;font-family:Georgia,serif;
+ background:radial-gradient(ellipse at 15% 10%,#fff,transparent 38%),
+ radial-gradient(ellipse at 90% 30%,#ffdeeb,transparent 40%),
+ linear-gradient(#fff2f7,#ffe1ed 55%,#fff7fa);
+}
+.scene{min-height:100vh;display:grid;place-items:center;padding:45px 18px}
+.hero,.letter{
+ width:min(760px,100%);padding:clamp(24px,5vw,50px);
+ border:1px solid #da7ea454;border-radius:25px;
+ background:#fffbfcee;box-shadow:0 22px 65px #b7597f21;
+}
+.hero{text-align:center}
+.eyebrow{font:700 .76rem system-ui;letter-spacing:.2em;text-transform:uppercase;color:#bb6a8c}
+h1{margin:0;color:#b44e7a;font-size:clamp(2.6rem,8vw,5rem);font-weight:500;line-height:1.05}
+.subtitle{font-size:1.15rem;line-height:1.7}
+.divider{margin:24px auto;color:#d27a9e}
+button{font:inherit;border:0;border-radius:30px;padding:14px 23px;cursor:pointer}
+.primary{color:white;background:linear-gradient(135deg,#e78db0,#c75c89);box-shadow:0 9px 22px #be527f3d}
+.tiny{font:.85rem system-ui;color:#b77b94}
+#letterWrap,#photoSection{display:none;width:min(760px,100%)}
+#letterWrap.show,#photoSection.show{display:block;animation:appear .7s ease both}
+.letter{line-height:1.9;font-size:1.08rem;background:#fffdfef5}
+.letter h2{text-align:center;font-size:2rem;font-weight:500;color:#b44e7a}
+.letter p{margin:0 0 1.1em}
+.signature{text-align:right;font-style:italic;color:#b44e7a;margin-top:25px}
+.bottom-actions{text-align:center;margin-top:28px}
+#photoSection{text-align:center}
+.photo-heart{font-size:3.5rem;margin-bottom:18px}
+.polaroid{display:inline-block;width:min(420px,100%);padding:13px 13px 25px;background:white;transform:rotate(-1.5deg);box-shadow:0 18px 45px #9b466c33}
+.polaroid img{display:block;width:100%;height:auto;min-height:200px;object-fit:cover}
+.blossom{position:fixed;top:-35px;pointer-events:none;color:#e994b5;animation:fall linear infinite;z-index:5}
+@keyframes fall{
+ 0%{transform:translateY(-5vh) rotate(0);opacity:0}
+ 10%,90%{opacity:.85}
+ 100%{transform:translate(var(--drift),110vh) rotate(520deg);opacity:0}
+}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.footer{text-align:center;padding:0 15px 25px;color:#bd8aa0;font:.8rem system-ui}
+</style>
+</head>
+
+<body>
+<main>
+<section class="scene">
+
+<div class="hero" id="portada">
+ <p class="eyebrow">Para mi persona favorita</p>
+ <h1>Floreces<br>en mi vida 🌸</h1>
+ <div class="divider">♡</div>
+ <p class="subtitle">Tres meses contigo, y todavía encuentro nuevas razones para sonreír cuando pienso en ti.</p>
+ <p class="subtitle">Como los cerezos en primavera, haces que hasta los días más sencillos se llenen de belleza.</p>
+ <div class="divider">✿</div>
+ <button class="primary" id="openLetter">Abrir mi cartita 💌</button>
+ <p class="tiny">He guardado unas palabritas para ti…</p>
+</div>
+
+<div id="letterWrap">
+<article class="letter">
+<h2>Felices 3 meses, mi amor 💗</h2>
+
+<p>Oñaaaaaaaa, piciosita. ❤️</p>
+
+<p>¡Felices 3 meses, muñequita! Me alegra mucho poder estar a tu ladito durante estos 3 meses ya. No manches, el tiempo se pasa volando cuando estás feliz con tu persona favorita.</p>
+
+<p>Primeramente, quiero agradecerte por este tiempo que llevamos juntos, que aunque apenas es una partecita de todo el tiempo que quiero estar a tu lado, me pone muy feliz que sigamos juntos.</p>
+
+<p>Sé que hemos tenido dificultades y que quizá no hemos hablado del todo o sacado todo lo que sentimos. De mi parte, siempre voy a procurar cuidarte, escucharte, comprenderte y hacerte sentir escuchada, porque lo que quieres y sientes también cuenta.</p>
+
+<p>Principalmente, no quiero darte una razón para que te guardes tus sentimientos por miedo a que me burle de ellos o no los valide. Al contrario, busco que siempre puedas ser abierta conmigo y sepas que puedes contarme lo que sea que te haga sentir mal o te genere alguna inquietud.</p>
+
+<p>Estoy muy lejos de ser un hombre perfecto. Quizá en ocasiones puedo ser muy complicado o enojón con ciertos temas, pero la verdad es que prometo ser más flexible, dar mi mano a torcer cuando sea necesario y buscar entenderte más.</p>
+
+<p>Lamento mucho si últimamente piensas o sientes que soy complicado, mi amor. Mi amor por ti es inmenso. Me preocupa mucho cómo te sientes y, por supuesto, tampoco quiero que cada cosita se vuelva una discusión. Genuinamente quiero que estés feliz y plena a mi lado, que sientas mi compañía como algo bonito y no como algo feo o que te dé miedo.</p>
+
+<p>Te amo mucho, muñequita. ¡Felices 3 meses! ❤️</p>
+
+<p>Y esta foto me gusta mucho porque ya es Halloween. 🎃💕</p>
+
+<p class="signature">Te amo, piciosita. ♡</p>
+</article>
+
+<div class="bottom-actions">
+ <button class="primary" id="showPhoto">Tengo una última cosita para ti 🌷</button>
+</div>
+</div>
+
+<div id="photoSection">
+ <div class="photo-heart">❤️</div>
+ <div class="polaroid">
+  <img id="ourPhoto" src="foto.jpg" alt="Nuestra foto">
+ </div>
+</div>
+
+</section>
+</main>
+
+<footer class="footer">Hecho con cariño, pétalos y un montón de amor. 🌸</footer>
+
+<script>
+const chars=["🌸","✿","❀","♡"];
+
+for(let i=0;i<24;i++){
+ const p=document.createElement("span");
+ p.className="blossom";
+ p.textContent=chars[Math.floor(Math.random()*chars.length)];
+ p.style.left=Math.random()*100+"vw";
+ p.style.fontSize=(12+Math.random()*16)+"px";
+ p.style.animationDuration=(9+Math.random()*13)+"s";
+ p.style.animationDelay=(-Math.random()*20)+"s";
+ p.style.setProperty("--drift",(Math.random()*180-90)+"px");
+ document.body.appendChild(p);
+}
+
+const cover=document.getElementById("portada");
+const letter=document.getElementById("letterWrap");
+const photo=document.getElementById("photoSection");
+
+document.getElementById("openLetter").onclick=()=>{
+ cover.style.display="none";
+ letter.classList.add("show");
+ window.scrollTo({top:0,behavior:"smooth"});
+};
+
+document.getElementById("showPhoto").onclick=()=>{
+ letter.style.display="none";
+ photo.classList.add("show");
+ window.scrollTo({top:0,behavior:"smooth"});
+};
+
+document.getElementById("ourPhoto").onerror=function(){
+ this.style.display="none";
+ const note=document.createElement("p");
+ note.textContent="No se encontró foto.jpg. Revisa que esté en la misma carpeta que index.html.";
+ note.style.cssText="padding:30px;background:#ffe8f1;font:1rem system-ui";
+ this.parentNode.appendChild(note);
+};
+</script>
+</body>
+</html>
